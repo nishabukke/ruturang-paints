@@ -72,9 +72,48 @@ $(document).on('change', '.div-toggle', function() {
   var show = $("option:selected", this).data('show');
   $(target).children().addClass('hide');
   $(show).removeClass('hide');
+  
 });
 $(document).ready(function(){
 	$('.div-toggle').trigger('change');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const selectElement = document.querySelector('.div-toggle');
+  const productDivs = document.querySelectorAll('.my-info-1 > div');
+
+  // Function to show the appropriate product div
+  function showProductDiv(productName) {
+    productDivs.forEach(function(div) {
+          if (div.classList.contains(productName)) {
+              div.classList.remove('hide');
+          } else {
+              div.classList.add('hide');
+          }
+      });
+  }
+
+  // Extract the product name from the query parameter
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const productName = urlParams.get('product');
+  // console.log(productName);
+
+  // const cromex = productName.replace("cromex", "Cromex Exterior Emulsion");
+
+  // const productSelect = cromex;
+
+  // Set the selected option based on the product name
+  if (productName) {
+      selectElement.value = productName;
+      showProductDiv(productName);
+  }
+
+  // Event listener to show the product when an option is selected
+  selectElement.addEventListener('change', function() {
+      const selectedValue = selectElement.value;
+      showProductDiv(selectedValue);
+  });
 });
 
 
