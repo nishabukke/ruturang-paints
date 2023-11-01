@@ -97,15 +97,50 @@ document.addEventListener("DOMContentLoaded", function() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const productName = urlParams.get('product');
-  // console.log(productName);
-
-  // const cromex = productName.replace("cromex", "Cromex Exterior Emulsion");
-
-  // const productSelect = cromex;
-
+  
+  if(productName.includes('sparkle')){
+    const selected = productName.replace("sparkle", "Sparkle Interior Emulsion");
+    selectElement.value = selected;
+  }
+  
+  if(productName.includes('regal')){
+    const selected = productName.replace("regal", "Regal Interior Emulsion");
+    selectElement.value = selected;
+  }
+  
+  if(productName.includes('prime')){
+    const selected = productName.replace("prime", "Prime Interior Emulsion");
+    selectElement.value = selected;
+  }
+  
+  if(productName.includes('elite')){
+    const selected = productName.replace("elite", "Elite Exterior Emulsion");
+    selectElement.value = selected;
+  }
+  
+  if(productName.includes('maestro')){
+    const selected = productName.replace("maestro", "Maestro Exterior Emulsion");
+    selectElement.value = selected;
+  }
+  
+  if(productName.includes('cromex')){
+    const selected = productName.replace("cromex", "Cromex Exterior Emulsion");
+    selectElement.value = selected;
+  }
+  
+  if(productName.includes('primer')){
+    const selected = productName.replace("primer", "Primer");
+    selectElement.value = selected;
+  }
+  
+  if(productName.includes('protect-primer')){
+    const selected = productName.replace("protect-primer", "Protect Primer");
+    selectElement.value = selected;
+  }
+  
   // Set the selected option based on the product name
   if (productName) {
-      selectElement.value = productName;
+      // selectElement.value = productName;
       showProductDiv(productName);
   }
 
