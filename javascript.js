@@ -80,6 +80,7 @@ $(document).ready(function(){
 
 document.addEventListener("DOMContentLoaded", function() {
   const selectElement = document.querySelector('.div-toggle');
+  const breadcrumbActive = document.querySelector('.breadcrumb-item.active');
   const productDivs = document.querySelectorAll('.my-info-1 > div');
 
   // Function to show the appropriate product div
@@ -93,6 +94,10 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 
+  function updateBreadcrumbValue(breadcrumbValue) {
+    breadcrumbActive.innerHTML = breadcrumbValue;
+  }
+
   // Extract the product name from the query parameter
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -101,41 +106,55 @@ document.addEventListener("DOMContentLoaded", function() {
   if(productName.includes('sparkle')){
     const selected = productName.replace("sparkle", "Sparkle Interior Emulsion");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   if(productName.includes('regal')){
     const selected = productName.replace("regal", "Regal Interior Emulsion");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   if(productName.includes('prime')){
     const selected = productName.replace("prime", "Prime Interior Emulsion");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   if(productName.includes('elite')){
     const selected = productName.replace("elite", "Elite Exterior Emulsion");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   if(productName.includes('maestro')){
     const selected = productName.replace("maestro", "Maestro Exterior Emulsion");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   if(productName.includes('cromex')){
     const selected = productName.replace("cromex", "Cromex Exterior Emulsion");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   if(productName.includes('primer')){
     const selected = productName.replace("primer", "Primer");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   if(productName.includes('protect-primer')){
     const selected = productName.replace("protect-primer", "Protect Primer");
     selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
+  }
+  
+  if(productName.includes('wall-putty')){
+    const selected = productName.replace("wall-putty", "Wall Putty");
+    selectElement.value = selected;
+    breadcrumbActive.innerHTML = selected;
   }
   
   // Set the selected option based on the product name
@@ -147,8 +166,11 @@ document.addEventListener("DOMContentLoaded", function() {
   // Event listener to show the product when an option is selected
   selectElement.addEventListener('change', function() {
       const selectedValue = selectElement.value;
+      const breadcrumbValue = selectElement.value;
       showProductDiv(selectedValue);
+      updateBreadcrumbValue(breadcrumbValue);
   });
+
 });
 
 
