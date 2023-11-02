@@ -6,6 +6,11 @@ body{
   color: #555151;
 }
 
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
 
 *[x-apple-data-detectors],  /* iOS */
     .x-gmail-data-detectors,    /* Gmail */
