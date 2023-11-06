@@ -500,11 +500,12 @@ ul.nav li .dropdown a:hover{
 /* about us */
 
 .about{
-    background-image: url(images/about-bg.avif);
+    background-image: url(images/about-bg.jpg);
     background-size: cover;
     background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 600px;
 }
 
 .about-content h4{
@@ -868,9 +869,13 @@ form#contact-us-form {
   .contact-links-1{
     gap: 83px;
   }
-
-  .links-content h4{
+  .links-content h5{
     font-size: 14px;
+    text-align: center;
+  }
+
+  .links-content h6{
+    font-size: 12px;
     text-align: center;
   }
 

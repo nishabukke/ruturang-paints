@@ -44,7 +44,7 @@
                                     <li><a href="primers-putties.html">Primers & Putties</a></li>
                                     <li><a href="interior-e.html">Interior Emulsions</a></li>
                                     <li><a href="exterior-e.html">Exterior Emulsions</a></li>
-                                    <li><a href="cool-star.html">Cool Star</a></li>
+                                    <li><a href="cool-star.html">Cool Star-Heat Reflective Coating&#174;</a></li>
                                     <!-- <li><a href="damp-guard.html">Damp Guard</a></li> -->
                                   </ul>
                                 </div>
@@ -82,7 +82,7 @@
                           <a class="nav__link" href="exterior-e.html">Exterior Emulsion</a>
                         </li>
                         <li class="nav__item">
-                          <a class="nav__link" href="cool-star.html">Cool Star</a>
+                          <a class="nav__link" href="cool-star.html">Cool Star-Heat Reflective Coating&#174;</a>
                         </li>
                         <!-- <li class="nav__item">
                           <a class="nav__link" href="damp-guard.html">Damp Guard</a>
@@ -105,22 +105,25 @@
             </nav>
         </div>
 
-        <div class="main-content product-inner mt-5">
+        <div class="select-div">
+            <select class="div-toggle" data-target=".my-info-1">
+                <option value="Elite Exterior Emulsion" data-show=".elite"><span>Elite Exterior Emulsion</span></option>
+                <option value="Cromex Exterior Emulsion" data-show=".cromex"><span>Cromex Exterior Emulsion</span></option>
+                <option value="Maestro Exterior Emulsion" data-show=".maestro"><span>Maestro Exterior Emulsion</span></option>
+            </select>
+        </div>
+        <div class="main-content product-inner">
             <div class="p-5 padding">
                 
-                <div class="select-div">
-                    <select class="div-toggle" data-target=".my-info-1">
-                        <option value="Elite Exterior Emulsion" data-show=".elite"><span>Elite Exterior Emulsion</span></option>
-                        <option value="Cromex Exterior Emulsion" data-show=".cromex"><span>Cromex Exterior Emulsion</span></option>
-                        <option value="Maestro Exterior Emulsion" data-show=".maestro"><span>Maestro Exterior Emulsion</span></option>
-                    </select>
-                </div>
                   
                 <div class="my-info-1 p-5">
                     <div class="elite hide">
                         <div class="row">
                             <div class="col-12 col-md-4 col-lg-4 col-sm-12">
                                 <img class="bucket-img" src="images/elite-detail.png" alt="Elite Exterior Emulsion Image">
+                                <div class="sizes">
+                                    <p class="m-0 fw-bold text-center">Available Sizes : 1L, 4L, 10L, 20L</p>
+                                </div>
                             </div>
                             <div class="col-12 col-md-8 col-lg-8 col-sm-12">
                                 <div class="products-detail">
@@ -165,6 +168,9 @@
                         <div class="row">
                             <div class="col-12 col-md-4 col-lg-4 col-sm-12">
                                 <img class="bucket-img" src="images/cromex-detail.png" alt="Cromex Exterior Emulsion Image">
+                                <div class="sizes">
+                                    <p class="m-0 fw-bold text-center">Available Sizes : 1L, 4L, 10L, 20L</p>
+                                </div>
                             </div>
                             <div class="col-12 col-md-8 col-lg-8 col-sm-12">
                                 <div class="products-detail">
@@ -209,6 +215,9 @@
                         <div class="row">
                             <div class="col-12 col-md-4 col-lg-4 col-sm-12">
                                 <img class="bucket-img" src="images/maestro-detail.png" alt="Maestro Exterior Emulsion Image">
+                                <div class="sizes">
+                                    <p class="m-0 fw-bold text-center">Available Sizes : 1L, 4L, 10L, 20L</p>
+                                </div>
                             </div>
                             <div class="col-12 col-md-8 col-lg-8 col-sm-12">
                                 <div class="products-detail">
@@ -253,62 +262,66 @@
             </div>
         </div>
         
-        <div class="contact mt-5">
-        <div class="contact-inner p-5">
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-4 col-sm-12">
-                    <div class="contact-form-container">
-                        <div class="form-heading">
-                            <h4 class="headings text-center">Contact Us</h4>
-                            <form id="contact-us-form" class="pt-3">
+        
+        <div class="contact">
+            <div class="contact-inner p-5">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4 col-sm-12">
+                        <div class="contact-form-container">
+                            <div class="form-heading">
+                                <h4 class="headings text-center">Contact Us</h4>
+                                <form id="contact-us-form" class="pt-3">
+                                    <div class="contact1">
+                                        <input type="text" id="fname" placeholder="your name..." required oninvalid="this.setCustomValidity('Please enter your first name')" oninput="this.setCustomValidity('')">
+                                </div>
                                 <div class="contact1">
-                                    <input type="text" id="fname" placeholder="your name..." required oninvalid="this.setCustomValidity('Please enter your first name')" oninput="this.setCustomValidity('')">
+                                    <input type="email" id="email" placeholder="your email..." required oninvalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')">
+                                </div>
+                                <div class="contact1">
+                                    <input type="tel" id="phone" placeholder="your phone..." required oninvalid="this.setCustomValidity('Please enter your phone')" oninput="this.setCustomValidity('')" pattern="[1-9]{1}[0-9]{9}">
+                                </div>
+                                <button class="btn submit-btn" type="submit" value="Submit">Submit</button>
+                                </form>
                             </div>
-                            <div class="contact1">
-                                <input type="email" id="email" placeholder="your email..." required oninvalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')">
-                            </div>
-                            <div class="contact1">
-                                <input type="tel" id="phone" placeholder="your phone..." required oninvalid="this.setCustomValidity('Please enter your phone')" oninput="this.setCustomValidity('')" pattern="[1-9]{1}[0-9]{9}">
-                            </div>
-                            <button class="btn submit-btn" type="submit" value="Submit">Submit</button>
-                            </form>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-8 col-lg-8 col-sm-12">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-4 col-lg-4 col-sm-12">
-                            <div class="contact-links">
-                                <div class="links">
-                                    <img src="images/location.png" alt="">
-                                    <div class="links-content">
-                                        <h4>Corporate Office Address : RBD Paints</h4>
-                                        <p class="m-0">Office No. 1001, 10th Floor, Ivory Toer, Vasant Baug Society, Bibewadi, Pune, Maharashtra - 411037</p>
+                    <div class="col-12 col-md-8 col-lg-8 col-sm-12">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-4 col-lg-4 col-sm-12">
+                                <div class="contact-links">
+                                    <div class="links">
+                                        <img src="images/location.png" alt="">
+                                        <div class="links-content">
+                                            <h5 class="m-0">Corporate Office Address</h5>
+                                            <h6>RBD Paints</h6>
+                                            <p class="m-0">Office No. 1001, 10th Floor, Ivory Toer, Vasant Baug Society, Bibewadi, Pune, Maharashtra - 411037</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="links">
-                                    <img src="images/mail.png" alt="">
-                                    <div class="links-content">
-                                        <h4>Sales Enquiries</h4>
-                                        <p class="m-0">sales@ruturangpaints.com</p>
+                                    <div class="links">
+                                        <img src="images/mail.png" alt="">
+                                        <div class="links-content">
+                                            <h5>Sales Enquiries</h5>
+                                            <p class="m-0">sales@ruturangpaints.com</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-4 col-sm-12">
-                            <div class="contact-links-1">
-                                <div class="links">
-                                    <img src="images/location.png" alt="">
-                                    <div class="links-content">
-                                        <h4>Factory Address : RBD Paints</h4>
-                                        <p class="m-0">Plot No. A - 23, MIDC, Deoli, Wardha, Maharashtra - 442101</p>
+                            <div class="col-12 col-md-4 col-lg-4 col-sm-12">
+                                <div class="contact-links-1">
+                                    <div class="links">
+                                        <img src="images/location.png" alt="">
+                                        <div class="links-content">
+                                            <h5 class="m-0">Factory Address</h5>
+                                            <h6>RBD Paints</h6>
+                                            <p class="m-0">Plot No. A - 23, MIDC, Deoli, Wardha, Maharashtra - 442101</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="links">
-                                    <img src="images/phone.png" alt="">
-                                    <div class="links-content">
-                                        <h4>Call Us</h4>
-                                        <a href="tel:+91-86000-13592"><p class="m-0">+91 86000 13592</p></a>
+                                    <div class="links">
+                                        <img src="images/phone.png" alt="">
+                                        <div class="links-content">
+                                            <h5>Contact Us</h5>
+                                            <a href="tel:+91-86000-13592"><p class="m-0">+91 86000 13592</p></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -316,8 +329,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+    </div>
     </div>
 
     
