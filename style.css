@@ -284,7 +284,8 @@ ul{
 
 .header-inner{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 .right-header{
@@ -294,6 +295,7 @@ ul{
 ul.nav{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
     justify-content: space-between;
     text-transform: uppercase;
@@ -382,12 +384,12 @@ ul.nav li .dropdown a:hover{
 }
 
 .quote-btn{
-  background-color: #000;
-  padding: 0px 15px;
-  border-radius: 50px;
-  /* box-shadow: 0 -2px 5px rgba(0,0,0,.5); */
-  border: none;
-  text-align: end;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,.5);
+    border: none;
+    text-align: end;
 }
 
 .quote-btn a{
@@ -532,16 +534,6 @@ ul.nav li .dropdown a:hover{
   position: relative;
 }
 
-.about-paint-red{
-  margin: 20px 0px 0px 0px;
-  padding: 50px 15px 56px 100px;
-  background-image: url('images/red-paint-patch.png');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
 
 
 /* why choose us */
@@ -552,49 +544,42 @@ ul.nav li .dropdown a:hover{
   color: #2c2c2c;
 }
 
-.why-img-box .blue-box{
-  padding: 50px 40px 50px 40px;
-  background-color: #03A1EB;
-  border-radius: 5px 5px 0px 0px;
-  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+.why-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
-.why-img-box .green-box{
-  padding: 50px 40px 50px 40px;
-  background-color: #009500;
-  border-radius: 5px 5px 0px 0px;
-  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-}
 
-.why-img-box .red-box{
-  padding: 50px 40px 50px 40px;
-  background-color: #EC2220;
-  border-radius: 5px 5px 0px 0px;
-  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-}
-
-.why-img-box .yellow-box{
-  padding: 75px 40px 50px 40px;
-  background-color: #FCAA05;
-  border-radius: 5px 5px 0px 0px;
-  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-}
-
-.blue-box img, .green-box img, .red-box img, .yellow-box img{
-  margin-bottom: 35px;
-}
-
-.blue-box h5, .green-box h5, .red-box h5, .yellow-box h5{
-  color: #FFFFFF;
-  font-family: "Poppins", Sans-serif;
+.blue-text{
+  color: #03a1eb;
   font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  line-height: 1.5;
+  font-weight: 700;
 }
 
-.elementor-image{
-  margin-top: -1px;
+.red-text{
+  color: #ec2220;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.yellow-text{
+  color: #fcaa06;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.violet-text{
+  color: #9933cc;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.green-text{
+  color: #009400;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 
@@ -834,23 +819,15 @@ form#contact-us-form {
     font-size: 14px;
   }
 
-  .why-img-box .blue-box, .why-img-box .green-box, .why-img-box .yellow-box, .why-img-box .red-box{
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
+  .why-img-box img{
+    width: 100%;
   }
 
-  .why-img-box .green-box{
-    padding-bottom: 0;
+  .violet-img{
+    width: 22% !important;
   }
 
-  .why-img-box .blue-box img, .why-img-box .yellow-box img, .why-img-box .green-box img, .why-img-box .red-box img{
-    width: 50px;
-    margin-bottom: 20px;
-  }
-
-  .why-img-box .blue-box h5, .why-img-box .green-box h5, .why-img-box .yellow-box h5, .why-img-box .red-box h5{
+  .blue-text, .violet-text, .yellow-text, .green-text, .red-text{
     font-size: 12px;
   }
 
@@ -990,21 +967,8 @@ form#contact-us-form {
     font-size: 14px;
   }
 
-  .why-img-box .blue-box, .why-img-box .red-box, .why-img-box .yellow-box, .why-img-box .green-box {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .blue-box h5, .green-box h5, .red-box h5, .yellow-box h5{
-    font-size: 12px;
-  } 
-
-  .elementor-image img{
-    height: 70px;
-  }
-
-  .blue-box img, .green-box img, .red-box img, .yellow-box img {
-    margin-bottom: 20px;
-    width: 50px;
+  .violet-img{
+    width: 100% !important;
   }
 
   .contact-form-container {

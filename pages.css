@@ -105,19 +105,19 @@ position: relative;
 
 .header-inner{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 
 .right-header{
   display: flex;
-  padding: 30px 90px;
-  gap: 150px;
 }
 
 ul.nav{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
     justify-content: space-between;
     text-transform: uppercase;
@@ -150,7 +150,7 @@ ul.nav li .dropdown{
   opacity: 0;
   position: absolute;
   padding: 20px 20px;
-  top: 75%;
+  top: 65%;
   transform: translateY(50px);
   width: 200px;
   background-color: #004066;
@@ -204,7 +204,7 @@ margin: 0;
 
 .quote-btn{
   background-color: #fff;
-  padding: 0px 15px;
+  padding: 10px 25px;
   border-radius: 50px;
   box-shadow: 0 -2px 5px rgba(0,0,0,.5);
   border: none;
@@ -430,7 +430,6 @@ margin: 0;
   background-position: center;
 background-repeat: no-repeat;
 padding: 40px;
-height: 350px;
 }
 
 .mission{
@@ -445,68 +444,11 @@ height: 350px;
   background-color: #198754;
 }
 
-/* 
-.nav-dots {
-  position: fixed;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
+.mission img, .vision img, .core-values img{
+  display: flex;
+  width: max-content;
+  margin: 0px auto;
 }
-
-.nav-dot {
-  width: 12px;
-  height: 12px;
-  border: 2px solid #52616a;
-  border-radius: 50%;
-  list-style: none;
-  background: #c9d6de;
-  transition: all 0.3s;
-}
-
-.nav-dot:not(:last-of-type){
-  margin-bottom: 20px;
-}
-
-.nav-dot:hover, .nav-dot.is-active{
-  transform: scale(1.8);
-    background: transparent;
-}
-
-.section {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 500px;
-}
-
-.section:nth-of-type(1){
-  background-color: #a5d296;
-}
-
-.section:nth-of-type(2){
-  background-color: #47b8e0
-}
-
-.section:nth-of-type(3){
-  background-color: #ffc952;
-}
-
-.section:nth-of-type(4){
-  background-color: #ff7473;
-}
-
-.section__heading {
-  margin: 0;
-  color: white;
-  font-size: 32px;
-  text-transform: capitalize;
-}
-
- */
-
 
 /* tabs */
 
@@ -950,22 +892,14 @@ form#contact-us-form {
     text-align: justify;
   }
 
-  .about-paint-red{
-    padding: 25px 15px 30px 35px;
-  }
-
-  .about-paint-red img{
-    width: 30px;
-  }
-
-  .about-paint-red h4{
-    font-size: 14px;
+  .rbd-paints-logo{
+    width: 50% !important;
   }
 
   /* product inner */
 
   .product-columns img{
-    width: 50%;
+    width: 70%;
     display: flex;
     margin: 0px auto;
   }
@@ -1161,10 +1095,19 @@ form#contact-us-form {
     border-bottom: 1px dashed #cccccc;
   }
 
+  
+.mission img, .vision img, .core-values img{
+  width: 50%;
+}
+
+.vision .row{
+  flex-direction: column-reverse;
+}
+
   /* product-inner */
 
   .product-columns img{
-    width: 50%;
+    width: 70%;
     display: flex;
     margin: 0px auto;
   }
