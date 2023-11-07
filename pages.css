@@ -495,23 +495,23 @@ display: block;
 } */
 
 .primer-header-container{
-  background-image: url('images/primer-bg.avif');
+  background-image: url('images/primer-bg.png');
 }
 
 .int-emulsion-header-container{
-  background-image: url('images/int-emulsion-bg.avif');
+  background-image: url('images/int-emulsion-bg.png');
 }
 
 .ext-emulsion-header-container{
-  background-image: url('images/ext-emulsion-bg.avif');
+  background-image: url('images/ext-emulsion-bg.png');
 }
 
 .coolstar-header-container{
-  background-image: url('images/cool-star-bg.avif');
+  background-image: url('images/cool-star-bg.png');
 }
 
 .contact-header-container{
-  background-image: url('images/contact-bg.avif');
+  background-image: url('images/contact-bg.png');
 }
 
 .product-inner{
@@ -1133,6 +1133,7 @@ form#contact-us-form {
 
   .breadcrumb-tag{
     font-size: 12px;
+    margin-left: 20px;
   } 
 
   select.div-toggle {
