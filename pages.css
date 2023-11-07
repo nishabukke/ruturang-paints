@@ -410,7 +410,7 @@ margin: 0;
 }
 
 .logo-imgs img{
-  width: 100%;
+  width: 75%;
 }
 
 .mission-content{
@@ -651,6 +651,9 @@ display: block;
 
 select{
   font-size: 18px;
+  background-color: #004066;
+  color: #fff;
+  border: none;
   font-weight: 500;
   text-align: center;
 }
@@ -1119,8 +1122,11 @@ form#contact-us-form {
   }
 
   .logo-imgs img{
-    width: 30%;
     margin-bottom: 10px;
+  }
+
+  .rbd-paints-logo{
+    width: 50% !important;
   }
 
   .about-p{
@@ -1182,6 +1188,10 @@ form#contact-us-form {
 
   /* product-detail */
 
+  .breadcrumb-tag{
+    font-size: 12px;
+  } 
+
   select.div-toggle {
     padding: 10px 19px;
   }
@@ -1200,6 +1210,8 @@ form#contact-us-form {
 
   .primer-header-container, .int-emulsion-header-container, .ext-emulsion-header-container, .coolstar-header-container, .contact-header-container, .about-header-container {
     background-size: 100% 100%;
+    height: 370px;
+    background-attachment: local;
   }
 
   .primer .row:nth-child(1), .protect-primer .row:nth-child(1), .regal .row:nth-child(1), .sparkle .row:nth-child(1), .prime .row:nth-child(1), .elite .row:nth-child(1), .cromex .row:nth-child(1), .maestro .row:nth-child(1), .cool-star .row:nth-child(1), .wall-putty .row:nth-child(1){
