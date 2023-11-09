@@ -200,6 +200,7 @@ ul.nav li .dropdown a:hover{
 .left-header p{
 font-size: 12px;
 margin: 0;
+font-weight: bold;
 }
 
 .quote-btn{
@@ -407,10 +408,15 @@ margin: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 
 .logo-imgs img{
   width: 75%;
+}
+
+.logo-imgs span{
+  font-size: 12px;
 }
 
 .mission-content{
@@ -853,7 +859,8 @@ form#contact-us-form {
   position: absolute;
   top: 108px;
   left: 30px;
-  font-size: 12px;
+  font-weight: bold;
+    font-size: 12px;
   z-index: 1;
 }
 
@@ -872,13 +879,21 @@ form#contact-us-form {
  /* about */
 
  .logo-imgs{
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  gap: 0;
  }
 
  .logo-imgs img{
   width: 30%;
+ }
+
+ hr{
+  margin: 10px 0;
+ }
+
+ .rbd-paints-logo{
   margin-bottom: 10px;
  }
 
@@ -1041,7 +1056,8 @@ form#contact-us-form {
     top: 95px;
     left: 25px;
     margin: 0;
-    font-size: 10px;
+    font-weight: bold;
+    font-size: 12px;
   }
  
   .hamburger, .cross, .menu{
@@ -1051,16 +1067,18 @@ form#contact-us-form {
   /* about */
 
   .logo-imgs{
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 0;
   }
 
-  .logo-imgs img{
-    margin-bottom: 10px;
+  hr{
+    margin: 10px 0;
   }
 
   .rbd-paints-logo{
     width: 50% !important;
+    margin-bottom: 10px;
   }
 
   .about-p{
