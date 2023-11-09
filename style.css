@@ -548,37 +548,44 @@ ul.nav li .dropdown a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 2px;
 }
 
+.why-img-box img{
+  width: 100%;
+}
+
+.yellow-img{
+  width: 70% !important;
+}
 
 .blue-text{
   color: #03a1eb;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .red-text{
   color: #ec2220;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .yellow-text{
   color: #fcaa06;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .violet-text{
   color: #9933cc;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .green-text{
   color: #009400;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -819,16 +826,21 @@ form#contact-us-form {
     font-size: 14px;
   }
 
+  .why-img-box{
+    gap: 0;
+  }
+
   .why-img-box img{
     width: 100%;
   }
 
-  .violet-img{
-    width: 22% !important;
+  .yellow-img{
+    width: 60% !important;
   }
 
+
   .blue-text, .violet-text, .yellow-text, .green-text, .red-text{
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .elementor-image img{
@@ -967,8 +979,8 @@ form#contact-us-form {
     font-size: 14px;
   }
 
-  .violet-img{
-    width: 100% !important;
+  .yellow-img{
+    width: 60% !important;
   }
 
   .contact-form-container {
